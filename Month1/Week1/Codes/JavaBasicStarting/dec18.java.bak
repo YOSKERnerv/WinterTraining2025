@@ -1,0 +1,87 @@
+// package dec18;
+public class dec18{
+    public static void main(String[] args){
+        // T1
+        // System.out.print(10+" ");
+        // System.out.print( 20+" ");
+        // System.out.println(30);
+        // System.out.println(20);
+        // System.out.println(50);
+        // System.out.print(60+" ");
+        // System.out.print(70+" ");
+        // System.out.println(80+" ");
+        // System.out.println(90);
+        // System.out.print(100+" ");
+        // System.out.println(110);
+        // System.out.print(120);
+        // System.out.print(5+" ");
+        // System.out.print(25+" ");
+        // System.out.print(75+" ");
+        // System.out.println(85);
+        // System.out.print(25+" ");
+        // System.out.print(45+" ");
+        // System.out.println(35);
+        // System.out.print(15+" ");
+        // System.out.println(20);
+        // System.out.println(5);
+        // System.out.println(55);
+        // System.out.print(66+" ");
+        // System.out.print(67);
+
+        // T2
+        // int a=10;
+        // String a = "LPU";
+        // System.out.println(a);
+        // it gives an error (it is already defined)
+
+
+        // T3 (calculare the area of square)
+
+        // double side  = 4.2;
+        // double area = side * side;
+        // System.out.println(area);
+        // System.out.print(side * side);
+
+        // T4
+        // write a java programme area of circle whose radius is 5;
+        // write a java programme to find ares of rectangle whose length = 3.5 and breadth  = 4
+
+        // double radius = 5;
+        // System.out.println(radius*radius*3.14);
+        // double length = 3.5;
+        // double breadth = 4;
+        // System.out.println(length * breadth);
+
+        // T5
+        // Write a java program to print various datatypes
+
+        // int a = 15;
+        // String b = "LPU";
+        // Boolean c = false;
+        // Float d  = 13.5f;
+        // String e = "true";
+        // char f = '#';
+        // String g = "123";
+        // String h = "@";
+        // System.out.println(a+"\n"+b+"\n"+c+"\n"+d+"\n"+e+"\n"+f+"\n"+g+"\n"+h);
+
+        // Write a java program to swap two numbers using 3rd variables and not using two variables
+
+        // int a = 2;
+        // int b = 4;
+        // int temp = a;
+        // a = b;
+        // b = temp;
+        // System.out.println(a+" "+b);
+
+        // a = a+b;
+        // b = a-b;
+        // a = a - b;
+        // System.out.println(a+" "+b);
+
+        
+
+    
+
+    }
+}

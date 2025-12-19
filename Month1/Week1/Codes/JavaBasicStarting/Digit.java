@@ -1,0 +1,19 @@
+class Digit 
+{
+	//public static boolean check(char ch){
+		
+	//}
+	public static void main(String[] args) 
+	{
+		char ch = '9';
+		char ch1 = '$';
+		char ch2 = 'a';
+		boolean res=(ch>='0' && ch<='9');
+		boolean res1 = (ch1>='0' && ch1<='9');
+		boolean res2 = (ch2>='0' && ch2<='9');
+		System.out.println(res);
+		System.out.println(res1);
+		System.out.println(res2);
+		
+	}
+}

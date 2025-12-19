@@ -1,0 +1,11 @@
+class UpperCaseAlph 
+{
+	public static void main(String[] args) 
+	{
+		char ch = 'A';
+		//int res = ch.isUpper()?"UpperCase":"Not Upper Case";
+		//(ch>='A' && ch<='Z')?System.out.print("Upper Case"):System.out.print("Not a upper case character");
+		int res = (ch>='A' && ch<='Z')?1:0;
+		System.out.println(res);
+	}
+}

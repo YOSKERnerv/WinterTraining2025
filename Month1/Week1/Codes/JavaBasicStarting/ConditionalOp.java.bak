@@ -1,0 +1,15 @@
+class ConditionalOp 
+{
+	public static void main(String[] args) 
+	{
+		int a = 10;
+		int b = 99;
+		int c = 0;
+		
+		int result  = ((a>b)?a:b)>c?((a>b)?a:b):c;
+		System.out.println(result);
+		
+		int res = (a>b)&&(b>c)?a:(b>c)?b:c;
+		System.out.println(res);
+	}
+}
