@@ -1,0 +1,12 @@
+class OnlineOrder 
+{
+	public static void main(String[] args) 
+	{
+		boolean backOrder = true;
+		boolean payment = true;
+		boolean stock = true;
+		int result  = (stock==true || backOrder==true)  && (payment==true)?"Order Sucessfull":"Order Failed";
+		System.out.println(result);
+		
+	}
+}

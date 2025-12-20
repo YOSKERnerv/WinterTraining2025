@@ -1,0 +1,15 @@
+class JobApplicant
+{
+	public static void main(String[] args) 
+	{
+		// a job applicant is eligible for the interview if they have at least 2 years of expreience or strong project expereince, but they  must have completed graduation;
+		
+		int yearsExp = 4;
+		String project = "Strong"; //"medium or weak ho sakta hai
+		boolean graduate = true;
+		
+		String result  = (graduate==true) &&( yearsExp>=2 || project=="Strong")?"Accepted":"Declined";
+		System.out.println(result);
+		
+	}
+}

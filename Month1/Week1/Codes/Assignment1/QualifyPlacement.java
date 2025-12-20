@@ -1,0 +1,11 @@
+class QualifyPlacement 
+{
+	public static void main(String[] args) 
+	{
+		boolean backlog  = true;
+		// let the minimum cgpa is 5.5;
+		double cgpa = 7.5;
+		String result  = (backlog==true)&& (cgpa<5.5)?"Qualified":"Not Qualified";
+		System.out.println(result);
+	}
+}

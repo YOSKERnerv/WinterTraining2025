@@ -1,0 +1,15 @@
+class FraudDetectionCheck 
+{
+	public static void main(String[] args) 
+	{
+		//An order is flaged for review if the order amount is greater than the average order value.
+		int averageValue  = 325;
+		int  orderAmount  = 342;
+		
+		String flagged  = (orderAmount>averageValue)?"Flagged for review":"Nothing wrong";
+		System.out.println(flagged);
+		
+		
+		
+	}
+}

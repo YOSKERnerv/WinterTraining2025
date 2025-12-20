@@ -1,0 +1,15 @@
+class Assignment2 
+{
+	public static void main(String[] args) 
+	{
+		//Question 1
+		// a user can only login if the username and password are not empty and the account is active
+		
+		boolean active = true;
+		String  username = "";
+		String  password = "dgdghj";
+		
+		String valid  = (active == false) || username != "" || password !=""? "Login Failed":"Login Successfull";
+		System.out.println(valid);
+	}
+}

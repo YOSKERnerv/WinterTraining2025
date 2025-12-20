@@ -1,0 +1,11 @@
+class  lockedAccount
+{
+	public static void main(String[] args) 
+	{
+		int loginTry = 0;
+		boolean Locked = false;
+		
+		String result  = (logintry>3)?"Account Locked":"Login Successfull";
+		System.out.println(result);
+	}
+}
