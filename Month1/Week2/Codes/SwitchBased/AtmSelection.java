@@ -1,0 +1,40 @@
+import java.util.*;
+class AtmSelection 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Select\n 1. Withdraw\n 2.Deposit\n 3. Balance Enquiry\n 4. Exit");
+		int a = sc.nextInt();
+		int totalBalance = 5000;
+		switch(a){
+			case 1:
+				System.out.println("Select the amount u want to withdraw from :"+totalBalance);
+				int w = sc.nextInt();
+				if(w>totalBalance){
+					System.out.println("Insuffcient balance");
+					break;
+				}
+				System.out.println("Amount withdrawn :"+w);
+				totalBalance -=w;
+				System.out.println("Your total balance is :"+totalBalance);
+				break;
+			case 2:
+				System.out.println("Select the amount u want to deposit :");
+				int d = sc.nextInt();
+				System.out.println("Amount deposit :"+d);
+				totalBalance += d;
+				System.out.println("Your total balance is :"+totalBalance);
+				break;
+			case 3:
+				System.out.println("Your total balance is :"+totalBalance);
+				break;
+			case 4:
+				System.out.println("Exited");
+				break;
+			default:
+				System.out.println("Select the correct option");
+			
+		}
+	}
+}

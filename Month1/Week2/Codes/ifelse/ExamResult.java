@@ -1,0 +1,22 @@
+import java.util.*;	
+class ExamResult 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the marks obtained!");
+		int marks = sc.nextInt();
+		
+		if(marks<40){
+			System.out.println("U faild!!");
+		}else{
+			if(marks>80){
+				System.out.println("U pass with Grade : A");
+			}else if(marks>=60 && marks<80){
+				System.out.println("U pass with Grade : B");
+			}else{
+				System.out.println("U pass");
+			}
+		}
+	}
+}
