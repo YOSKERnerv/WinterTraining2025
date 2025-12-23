@@ -1,0 +1,33 @@
+class ReverseNumber 
+{
+	public static void main(String[] args) 
+	{
+		int num = 1234;
+		System.out.println("Original Number : "+num);
+		int temp = 0;
+		int l  =1000;
+		while(num!=0){
+			
+			int a  = num%10; //a=4,3,2,1,0
+			temp += a*l;
+			//System.out.print(a);//4321
+			num  = num/10; //num=123
+			l /= 10;
+			
+		}
+		System.out.println("Reversed Number : "+temp);
+		
+		//System.out.print("Reversed Number : ");
+		//while(num!=0){
+			//int a  = num%10; //a=4,3,2,1,0
+			//System.out.print(a);//4321
+			//num  = num/10; //num=123
+			
+		//}
+		
+		
+		
+		
+		
+	}
+}

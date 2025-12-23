@@ -1,0 +1,22 @@
+class I2 
+{
+	public static void main(String[] args) 
+	{
+		boolean isflag = true;
+		while(isflag){
+			System.out.println("Hello World!");
+			isflag=false;
+		}
+		//while(true){
+			//System.out.println("WE are !");
+			//System.exit(0);
+		//}
+		
+		for( ; ; ){
+			System.out.println("WE are !");
+			System.exit(0);
+		}
+		
+		
+	}
+}

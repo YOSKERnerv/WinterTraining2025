@@ -1,0 +1,16 @@
+class A3
+{
+	public static void main(String[] args) 
+	{
+		//wap to print the alphabet by reading number?
+		int num = 5;
+		for(int i=1;i<=26;i++){
+			char a = (char)(i+64);
+			System.out.println(i+" = "+a);
+			if(i==num){
+				System.out.print("This is the number for that : ");
+			}
+		}
+		
+	}
+}

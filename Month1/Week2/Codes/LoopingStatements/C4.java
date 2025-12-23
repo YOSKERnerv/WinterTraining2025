@@ -1,0 +1,21 @@
+class C4 
+{
+	public static void main(String[] args) 
+	{
+		//1
+		int i=1;
+		for( ;i<=3;i++)
+		{
+			System.out.println(i+" ");
+		}
+		//2
+		int j;
+		for(j=1;j<=2;j++){
+			System.out.println(j+" ");
+		}
+		//3
+		for(int k=1;k<=2;k++){
+			System.out.println(k+" ");
+		}
+		}
+}

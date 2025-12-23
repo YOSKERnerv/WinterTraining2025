@@ -1,0 +1,12 @@
+class A1 
+{
+	public static void main(String[] args) 
+	{
+		// wap to print even alphabet by using for loop
+		for(char i='A';i<='Z';i++){
+			System.out.println(a)
+			
+		}
+		
+	}
+}
