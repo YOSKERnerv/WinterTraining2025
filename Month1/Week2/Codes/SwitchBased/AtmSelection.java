@@ -11,10 +11,11 @@ class AtmSelection
 			case 1:
 				System.out.println("Select the amount u want to withdraw from :"+totalBalance);
 				int w = sc.nextInt();
-				if(w>totalBalance){
+				if(w>totalBalance || w<0){
 					System.out.println("Insuffcient balance");
 					break;
 				}
+				
 				System.out.println("Amount withdrawn :"+w);
 				totalBalance -=w;
 				System.out.println("Your total balance is :"+totalBalance);
@@ -22,6 +23,9 @@ class AtmSelection
 			case 2:
 				System.out.println("Select the amount u want to deposit :");
 				int d = sc.nextInt();
+				if(d<0){
+					System.out.println("Enter value more than 0");
+				}
 				System.out.println("Amount deposit :"+d);
 				totalBalance += d;
 				System.out.println("Your total balance is :"+totalBalance);
