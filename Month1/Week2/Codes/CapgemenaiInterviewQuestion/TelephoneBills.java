@@ -1,0 +1,38 @@
+import java.util.*;
+class  TelephoneBills
+{
+	public static void main(String[] args) 
+	{
+		//Write a program to calculate the monthly telephone bills as per the following
+		//Minimum Rs. 200 for up to 100 calls
+		//Plus Rs. 0.60 per call for next 50 calls.
+		//Plus Rs. 0.50 per cail for next 50 calls.
+		//Plus Rs. 0.40 per cali for any call beyond 200 calls.
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Entre the total number of calls made :");
+		double callCount = sc.nextDouble();
+		double totalCost = 200;
+		if(callCount<0){
+			System.out.println("the value of call should be greater than '0'");
+		}
+		
+		if(callCount<=100){
+			System.out.println("Your total cost is : "+totalCost);
+		}else if(callCount>100 && callCount <=150){
+			totalCost  += (callCount - 100)*0.60;
+			System.out.println("Your total cost is : "+totalCost);
+		}else if(callCount>150 && callCount<=200){
+			totalCost += (callCount -100)* 0.60;
+			totalCost+=(callCount -150)*0.50;
+			System.out.println("Your total cost is : "+totalCost);
+		}else{
+			totalCost += (callCount -100)* 0.60;
+			totalCost+=(callCount -150)*0.50;
+			totalCost+=(callCount - 200)*0.40;
+			System.out.println("Your total cost is : "+totalCost);
+		}
+			
+			
+	}
+}

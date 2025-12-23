@@ -1,0 +1,25 @@
+import java.util.*;
+class ShopDiscount 
+{
+	public static void main(String[] args) 
+	{
+		// a shop will give discount of 10% of tje cpst of purchased qunatiity is more than 1000.
+		//Based on quantity
+			//Suppose, one unit will cost 100
+			//judge and print cost for user
+			
+		double costUnit = 100;
+		Scanner sc = new Scanner(System.in);
+		double quantity = sc.nextDouble();
+		double totalCost = costUnit*quantity;
+		
+		if(totalCost>1000){
+			totalCost = totalCost -(totalCost/10);
+			System.out.println("Your total cost is  : +"+totalCost);
+		}else{
+				System.out.println("The total price is : "+totalCost);
+			}
+				
+		
+	}
+}
