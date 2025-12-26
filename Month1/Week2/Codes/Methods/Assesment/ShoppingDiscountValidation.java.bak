@@ -16,10 +16,10 @@ class ShoppingDiscountValidation
 		int a = sc.nextInt();
 		String customer = "";
 		if(a==1){
-			customer = "Regular";
 			if(amount>25000){
 				customer = "Premium")
 			}
+			customer = "Regular";
 		}else if(a==2){
 			customer = "Premium";
 		}else{

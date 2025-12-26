@@ -1,0 +1,44 @@
+import java.util.*;
+
+class ExamResultAnalyzer 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter grade : ");
+		double user1 = sc.nextDouble();
+		
+		System.out.println("Enter grade : ");
+		double user2 = sc.nextDouble();
+		
+		System.out.println("Enter grade : ");
+		double user3 = sc.nextDouble();
+		
+		String a = eligible(user1,user2,user3);
+		System.out.println(a);
+		
+	}
+	public static String eligible(double user1,double user2,double user3){
+		String  a =   "user1 : Not Eligible \n";
+		String b =   "user2 : Not Eligible \n";
+		String c =   "user3 : Not Eligible \n";
+		if(user1>75){
+			a =   "user1 : Eligible \n";
+		}
+		if(user2>75)
+		{
+			b =   "user2 : Eligible \n";
+		}
+		
+		if (user3>75)
+		{
+			  c =   "user3 : Eligible \n";
+		}
+		
+		return a+b+c;
+			
+		
+	}
+}

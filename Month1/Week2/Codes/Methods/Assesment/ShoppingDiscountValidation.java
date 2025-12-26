@@ -11,6 +11,7 @@ class ShoppingDiscountValidation
 		System.out.println("Your total amount is : "+total);
 		
 	}
+	
 	public static String cust(int amount){
 		System.out.println("Enter the customer type :\n 1- Regular \n 2- Premuium");
 		int a = sc.nextInt();
