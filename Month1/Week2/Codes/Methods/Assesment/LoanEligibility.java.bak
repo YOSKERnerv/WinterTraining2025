@@ -5,7 +5,11 @@ class LoanEligibility
 	public static void main(String[] args) 
 	{
 		System.out.println("Welcome to loanCheck!!");
-		user();
+		do {
+            user();
+        } while (again());
+
+        System.out.println("Thank you for applying!");
 		
 		
 	}
@@ -19,32 +23,26 @@ class LoanEligibility
 			double score = sc.nextDouble();
 			System.out.println("Enter the Loan Amount of User"+i);
 			double loan = sc.nextDouble();
+			System.out.println("Enter the total loan u already have ");
+			double tloan = sc.nextDouble();
 			
 			//now checking the eligibility.....
-			String status = check(income,score,loan);
+			String status = check(income,score,loan,tloan);
 			System.out.println("Your status is : "+status);
 			
 			
 			
 		}
 	}
-	public static void again(){
-		System.out.println("Do you want to Conitnue :\n 1. Yes \n 2. No");
-			int want = sc.nextInt();
-			if(want==1){
-				user();
-			}else{
-					System.out.println("Thank You for Appling");
-			}
-	}
-	public static String check(double income,double score,double loan){
-		System.out.println("Enter the total loan u already have ");
-		double a = sc.nextDouble();
-		
+	static boolean again() {
+        System.out.print("\nContinue? (1 = Yes, 2 = No): ");
+        return sc.nextInt() == 1;
+    }
+	public static String check(double income,double score,double loan,double tloan){
 		String eli =  "Eligible\n\n";
 		double c = income/12;
 		double d = loan / 12;
-		if(a>5 ||(c/3)>d || score<100){
+		if(tloan>5 ||(c/3)>d || score<100){
 			eli = "Not Eligible ";
 		}
 		
