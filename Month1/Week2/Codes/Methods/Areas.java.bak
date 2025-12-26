@@ -1,0 +1,100 @@
+import java.util.*;
+class Areas 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		// find the area of the various figures;
+		System.out.println("<-----Welcome to Shape Finder---->");
+		find();
+		
+	}
+	public static void find(){
+		System.out.println("Select the shape u want to find the area of : \n 1. Traingle \n 2. Square \n 3. Rectangle \n 4. Circle \n 5. Exit");
+		int option  = sc.nextInt();
+		
+		switch(option){
+			case 1 :
+				System.out.println(traingle());
+				System.out.println("\n\n ----------------------------------------------\n");
+				again();
+				break;
+			case 2 :
+				System.out.println(square());
+				System.out.println("\n\n ----------------------------------------------\n");
+				again();
+				break;
+			case 3 :
+				System.out.println(rectangle());
+				System.out.println("\n\n ----------------------------------------------\n");
+				again();
+				break;
+			case 4 : 
+				System.out.println(circle());
+				System.out.println("\n\n ----------------------------------------------\n");
+				again();
+				break;
+			case 5 :
+				exit();
+				break;
+			default :
+				System.out.println("Please select Correct Option");
+		}
+	}
+	
+	public static double traingle(){
+		
+		System.out.println("Please choose the dimention of the traingle");
+		System.out.println("height : ");
+		double height = sc.nextDouble();
+		System.out.println("Base : ");
+		double base = sc.nextDouble();
+		
+		System.out.println("The Area of the traingle is : ");
+		double result = (height*base)/2;
+		return result;
+	}
+	public static double square(){
+		System.out.println("Please choose the dimention of the Square");
+		System.out.println("Side : ");
+		double s = sc.nextDouble();
+		System.out.println("Your area of Square is : ");
+		double result = (s*s);
+		return result;
+	}
+	public static double rectangle(){
+		System.out.println("Please choose the dimention of the Rectangle");
+		System.out.println("length : ");
+		double length = sc.nextDouble();
+		System.out.println("Breadth : ");
+		double breadth = sc.nextDouble();
+		System.out.println("Your area of rectangle is : ");
+		return (length*breadth);
+		
+	}
+	public static double circle(){
+		System.out.println("Please choose the dimention of the Circle");
+		System.out.println("Radius: ");
+		double radius = sc.nextDouble();
+		System.out.println("Area of Circle is  : ");
+		double result = (3.14*radius*radius);
+		return result;
+	}
+	public static void again(){
+		
+		sc.nextLine();
+		System.out.println("Do you want to find area again of any shape? Y/N");
+		String a = sc.nextLine();
+		if(a.equals("Y")||a.equals("y")){
+			find();
+		}else if(a.equals("N")||a.equals("n")){
+			exit();
+		}else{
+			System.out.println("Select correct option");
+		}
+		
+	}
+	public static void exit(){
+		System.out.println("You have been exited ");
+	}
+}

@@ -1,0 +1,42 @@
+import java.util.*;
+class BillCalculator 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello Bill Calculator Here!!");
+		System.out.println("Enter the slab rate: ");
+		double slab = sc.nextDouble();
+		
+		double total = bill(slab);
+		
+		if(total== -1){
+			System.out.println("The units excedds boundry value");
+		}else{
+			System.out.println("The total amount is  :"+total);
+		}
+		
+	}
+	
+	public static double bill(double slab){
+		System.out.println("Enter the boundry value: ");
+		double boundry = sc.nextDouble();
+		
+		System.out.println("Enter the units consumed : ");
+		double units = sc.nextDouble();
+		
+		if(bound(boundry,units)){
+			double amount  = units * slab;
+			return amount;
+		}
+		return -1;
+	}
+	public static boolean bound(double boundry, double units){
+		
+		if(units>boundry){
+			return false;
+		}
+		
+		return true;
+	}
+}

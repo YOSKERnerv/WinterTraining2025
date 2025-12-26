@@ -1,0 +1,34 @@
+import java.util.*;
+class LoginAuthenticationSystem 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		String username = "yosker";
+		String password = "yosker";
+		
+		String code = login(username,password);
+		System.out.println(code);
+	}
+	public static String login(String username, String password){
+		System.out.println("Enter your usename : ");
+		String name = sc.nextLine();
+		System.out.println("Enter your password : ");
+		String pass = sc.nextLine();
+		
+		if(name.equals(username)){
+			if(pass.equals(password)){
+				return "sdgfhgu57e";
+			}else{
+				System.out.println("Wrong password");
+			}
+		}else{
+			System.out.println("Wrong username ");
+		}
+		
+		return "login Failed!";
+			
+	}
+	
+	
+}

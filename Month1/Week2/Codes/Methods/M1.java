@@ -1,0 +1,37 @@
+import java.util.*;
+class M1 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+		demo1();
+		System.out.println("Hello End!");
+		demo3();
+		demo4(10);
+	}
+	
+	public static void demo1(){//Non paramatric without return
+		System.out.println("Demo1() statement 1");
+		demo2(3);
+		System.out.println("Demo1 statement 2");
+		
+	}
+	public static void demo2(int a){//pramatric without return 
+		System.out.println("Demo2() Method"+a);
+		a--;
+		if(a>0){
+			demo2(a);
+		}
+	}
+	
+	public static String demo3(){
+		System.out.println("Demo 3");
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		System.out.println("The value of a is :"+a);
+		return "";
+	}
+	static void demo4(int a){
+		System.out.println("Demo4");
+	}
+}

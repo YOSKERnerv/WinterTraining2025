@@ -1,0 +1,25 @@
+import java.util.*;
+class BankTranscationValidation 
+{
+	public static void main(String[] args) 
+	{
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your total account Balance : ");
+		double balance = sc.nextDouble();
+		System.out.println("Enter your amount you want to withdraw : ");
+		double wamount  = sc.nextDouble();
+		bank(balance,wamount);
+		
+	}
+	public static void bank(double balance, double wamount){
+		
+		if(balance<wamount){
+			System.out.println("Withdrawl not possible \n amount axcedds balance");
+		}else{
+			System.out.println("Amount withdraed -> "+wamount);
+			double rbalance  = balance - wamount;
+			System.out.println("Your remaining amount is : "+rbalance);
+		}
+	}
+}

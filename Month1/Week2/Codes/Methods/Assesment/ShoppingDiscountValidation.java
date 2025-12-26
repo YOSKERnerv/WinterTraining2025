@@ -1,0 +1,44 @@
+import java.util.*;
+class ShoppingDiscountValidation 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter the amount purchased : ");
+		double amount  = sc.nextDouble();
+		
+		double total  =  engine(amount);
+		System.out.println("Your total amount is : "+total);
+		
+	}
+	public static String cust(int amount){
+		System.out.println("Enter the customer type :\n 1- Regular \n 2- Premuium");
+		int a = sc.nextInt();
+		String customer = "";
+		if(a==1){
+			if(amount>25000){
+				customer = "Premium")
+			}
+			customer = "Regular";
+		}else if(a==2){
+			customer = "Premium";
+		}else{
+			System.out.println("Please Enter correct Number");
+		}
+		return customer;
+		
+	}
+	
+	public static double engine(double amount){
+		String a = cust(amount);
+		double discount = 10;
+		if(a.equals("Regular")){
+			amount  = amount  - (amount/10);
+			
+		}else{
+			discount = 25;
+			amount  = amount  - (amount/4);
+		}	
+		return amount;
+	}
+}
