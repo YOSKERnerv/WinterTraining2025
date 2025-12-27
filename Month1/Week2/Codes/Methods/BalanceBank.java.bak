@@ -1,0 +1,78 @@
+import java.util.*;
+class  BalanceBank
+{
+	static Scanner sc = new Scanner(System.in);
+	static double oribalance = 500000;
+	public static void main(String[] args) 
+	{
+		System.out.println("Welcome!!!");
+		do {
+            user();
+        } while (again());
+        System.out.println("Thank you!!");
+		
+	}
+	public static boolean again(){
+		System.out.println("\nContinue? 1 =Yes, 2 = No : ");
+        return sc.nextInt() == 1;
+	}
+	public static void user(){
+		
+		System.out.println("Choose the option \n 1. Withdraw \n 2/ Deposit \n 3. Display \n 4. Exit");
+		int a = sc.nextInt();
+		
+		switch(a){
+			case 1:
+				double draw1 = withdraw();
+				double total = oribalance- draw1;
+				System.out.println("Your total balance is :"+total);
+				break;
+			case 2:	
+				double total2 = deposit()-oribalance;
+				System.out.println("You have total balance :"+total2);
+				break;
+			case 3:
+				balance();
+				break;
+			case 4:
+				exit();
+				break;
+			default:
+				System.out.println("Invalid!! No option like that.");
+		}
+		
+	}
+	public static Double withdraw(){
+		System.out.println("Enter the amount You want to withdraw :");
+		double draw = sc.nextDouble();
+		
+		if(draw > 0 && draw <= balance){
+			System.out.println("You have withdrawn "+draw);
+		}	
+		return draw;
+		
+	}
+	public static Double deposit(){
+		System.out.println("Enter the amount You want to deposit :");
+		double depo = sc.nextDouble();
+		
+		if(depo>0){
+			System.out.println("You have deposited "+depo);
+		}else{
+			System.out.println("Cannot be negative");
+		}
+		return depo;
+		
+	}
+	public static void balance(){
+		double balance = oribalance;
+		double draw1 = withdraw();
+		balance  = oribalance - draw1;
+		double depo1 = deposit();
+		balance = oribalance+depo1;
+		System.out.println("Your total amount is : "+balance);	
+	}
+	public static void exit(){
+		System.out.println("You have been exited");
+	}
+}

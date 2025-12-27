@@ -1,0 +1,42 @@
+import java.util.*;
+class DesireNumber 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number to start from : ");
+		int a = sc.nextInt();
+		System.out.println("Enter the number to end from : ");
+		int b = sc.nextInt();
+		
+		
+		
+		while(a<=b){
+			int length = 0;
+		
+			int temp = a;
+			while(temp!=0){
+			temp = temp/10;
+			length++;
+			}
+			temp =a;
+			int sum = 0;
+			while(length!=0){
+				int num = temp%10;
+				int k  =length;
+				int sum1 = 1;
+				for(int i=1;i<=k;i++){
+					sum1 *= num;
+				}
+				sum += sum1;
+				temp /= 10;
+				length--;
+			}
+			if(sum==a){
+			System.out.println(a+" Number is  Disarium Number");
+			}
+			a++;
+		}
+		
+	}
+}
