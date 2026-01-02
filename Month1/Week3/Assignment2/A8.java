@@ -1,0 +1,30 @@
+import java.util.*;
+class A8
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the size of the array :");
+		int size = sc.nextInt();
+		int arr[] = new int[size];
+		
+		System.out.println("Enter the elements");
+		int max =0;
+		int smax = 0;
+		for(int i=0;i<arr.length;i++){
+				 arr[i]= sc.nextInt();
+		}
+		System.out.println("-----------------");
+		System.out.println(Arrays.toString(arr));
+		System.out.println("Enter the element u want to search :");
+		int ele = sc.nextInt();
+		
+		for(int i=0;i<arr.length;i++){
+			if(arr[i]==ele){
+				System.out.println("Element found at index :"+i);
+			}
+			
+		}
+				
+	}
+}
