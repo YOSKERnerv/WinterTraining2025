@@ -1,0 +1,15 @@
+class Marker
+{
+	static
+	{
+		System.out.println("Shop");
+	}
+	static String name;
+	public static void main(String[] args) 
+	{
+		
+		System.out.println("Hello World!");
+	}
+	public static void work(){
+		System.out.println("Work method in driver");
+}
