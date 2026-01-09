@@ -1,9 +1,14 @@
 package Opps;
 
-public class oppsBasic{
+public class oppsBasic {
+	int a;
+	public oppsBasic(int a) {
+		this.a = a;
+		
+	}
 	public static void main(String args[]) {
-		int a =10;
-		System.out.print(a);
-		System.out.println("\nHEllo this is that");
+		System.out.print(temp.a);
+		System.out.println("\nHEllo");
 	}
 }
+ 
