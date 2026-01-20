@@ -14,7 +14,7 @@ public class Main1 {
 		Register r = new Register(name,password,phonenumber);
 		
 		
-		Ola o =  new Mini("Yosker",77777,5464,4,"lpu",500);
+		Ola o =  new Ola("Yosker",777777777L,5464,r);
 		o.login();
 		
 
@@ -51,6 +51,15 @@ class Ola{
 		this.contactNumber = contactNumber;
 		this.uberAccBalance = uberAccBalance;
 		this.register = register;
+	}
+	public String getUsername() {
+		return username;
+	}
+	public long getContactNumber() {
+		return contactNumber;
+	}
+	public double getAccountBalance() {
+		return uberAccBalance;
 	}
 	
 	public boolean login(){

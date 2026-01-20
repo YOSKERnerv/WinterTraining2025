@@ -16,12 +16,12 @@ class Mini extends Ola{
 	
 	public boolean bookCab() {
 		if(super.login()) {
-			int total = uberAccBalance - price;
+			double total = super.getAccountBalance() - price;
 			if(total<=0) {
 				return false;
 			}
-			return true;
 		}
+		return true;
 	}
 	public void display() {
 		if(bookCab()) {

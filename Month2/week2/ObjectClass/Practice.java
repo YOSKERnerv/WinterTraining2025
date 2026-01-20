@@ -1,0 +1,13 @@
+class Practice 
+{
+	public static void main(String[] args) 
+	{
+		int a = 100;
+		Integer obj = a;
+		Double d = (double)obj;
+		System.out.println(d);
+	}
+}
+class Employee{
+	
+}
